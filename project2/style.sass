@@ -1,0 +1,545 @@
+$color-block: #999
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+.wrapper 
+  min-height: 100%
+  display: flex
+  flex-direction: column
+
+.top-top 
+  flex-grow: 1
+
+html
+    font-size: 16px // 1rem
+
+body
+    font-family: 'Roboto', sans-serif
+
+a
+    text-decoration: none
+
+.top
+    min-height: 376px
+    background: linear-gradient(0deg, rgba(104, 188, 245, 0.2) 8.84%, rgba(152, 195, 232, 0) 31.12%)
+    &__content
+        text-align: center
+        padding-bottom: 40px
+    &__h1
+        font-weight: normal
+        line-height: 60px
+        width: 70vw
+        letter-spacing: 0.04em
+        color: #1F3F68
+        &__var 
+            font-size: 2rem
+    &__text
+        font-size: 16px
+        margin-top: 1rem
+        line-height: 26px
+        letter-spacing: 0.05em
+        color: #1F3F68
+        opacity: 0.6
+        &-var 
+            margin-bottom: 71px
+    &__link
+        font-size: 16px
+        background-color: #5A98D0
+        padding: 15px 50px
+        border-radius: 10px
+        color: #fff
+        transition: background-color .2s
+        &:hover 
+            background-color: #497dac
+
+.center
+    padding: 0 15px
+
+.header
+    min-height: 80px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding-left: 16px
+    padding-right: 16px
+
+#switcher
+    position: absolute
+    visibility: hidden
+    left: -999999px
+    &:checked ~ .nav
+        top: 0
+
+.menu
+    list-style-type: none
+    &__link
+        font-size: 16px
+        color: #1F3F68
+        padding: 32px
+        text-transform: uppercase
+
+.heading
+    font-style: normal
+    font-weight: normal
+    font-size: 24px
+    line-height: 28px
+    text-align: center
+    color: #000000
+
+.what-we-bo
+    margin-top: 48px
+    &__box
+        padding-top: 2rem
+        display: flex
+        flex-direction: column
+        align-items: center
+
+.fas 
+    font-size: 24px
+    vertical-align: -4px
+    &-var
+        margin-left: 10px
+
+.product
+    box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2)
+    border-radius: 10px
+    padding: 40px 30px 21px
+    margin-bottom: 32px
+    display: flex
+    flex-direction: column
+    max-width: 334px
+    &__img
+        align-self: center
+    &__link
+        font-size: 14px
+        letter-spacing: 0.05em
+        color: #5A98D0
+        &:hover 
+            color: #497dac
+    &__heading
+        font-style: normal
+        font-weight: normal
+        font-size: 20px
+        line-height: 30px
+        letter-spacing: 0.05em
+        color: #1F3F68
+        margin-top: 48px
+    &__text
+        font-style: normal
+        font-weight: normal
+        font-size: 16px
+        line-height: 26px
+        letter-spacing: 0.05em
+        color: #1F3F68
+        opacity: 0.6
+        padding-top: 12px
+        padding-bottom: 12px
+
+.finish_proj
+    margin-top: 64px
+    margin-bottom: 64px
+    &__h1 
+        font-size: 36px
+        line-height: 46px
+        text-align: center 
+        margin-bottom: 32px
+        font-weight: normal
+    &__h2 
+        font-size: 16px
+        line-height: 26px
+        text-align: center
+        letter-spacing: 0.05em
+        font-weight: normal
+
+.proj
+    &__item
+        margin-bottom: 1rem
+        border-radius: 10px
+        display: flex
+        position: relative
+    &__img
+        width: 100%
+        height: 100%
+    &__text
+        color: #FFFFFF
+        position: absolute
+        font-size: 1rem
+        top: 1rem
+        right: 1rem
+        &_left
+            right: auto
+            left: 1rem
+
+.contact
+    margin: 64px 40px 32px
+    &__text__h1
+        font-style: normal
+        font-weight: 500
+        font-size: 20px
+        line-height: 30px
+        letter-spacing: 0.04em
+        color: #1F3F68
+        margin-bottom: 24px
+    &__text__p, 
+    &__text__p-1
+        font-style: normal
+        font-weight: 300
+        font-size: 16px
+        line-height: 26px
+        letter-spacing: 0.04em
+        color: #1F3F68
+        opacity: 0.6
+    &__text__p
+        margin-bottom: 40px
+        width: 299px
+    &__text__p-1
+        margin-bottom: 16px
+
+.fass 
+    opacity: 0.8
+    color: #1F3F68
+    font-size: 20px
+    vertical-align: -1px
+    margin-right: 18px
+
+.contact__box__product
+    &__h1 
+        font-style: normal
+        font-weight: bold
+        font-size: 16px
+        line-height: 30px
+        letter-spacing: 0.04em
+        color: #1F3F68
+        margin-bottom: 48px
+    &__text
+        font-size: 16px
+        line-height: 30px
+        letter-spacing: 0.04em
+        color: #1F3F68
+        opacity: 0.8
+    &__input 
+        outline: none
+        font-size: 16px
+        line-height: 30px
+        letter-spacing: 0.04em
+        color: #1F3F68
+        opacity: 0.2
+        border: 1px solid #356EAD
+        border-radius: 10px
+        padding: 0 26px
+        height: 71px
+        width: 100%
+        margin-bottom: 31px
+        &-var 
+            height: 140px
+    &__button 
+        background: #5A98D0
+        border: 0px
+        outline: none
+        box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2)
+        border-radius: 10px
+        font-size: 16px
+        line-height: 26px
+        text-align: center
+        letter-spacing: 0.04em
+        color: #FFFFFF
+        width: 100%
+        padding: 15px 0
+        margin-top: 40px
+        transition: background-color .2s
+        &:hover 
+            background-color: #497dac
+
+    &__form
+        align-self: center
+        width: 100%
+
+.footer 
+    background-color: #316099
+    margin-top: 4rem
+    &__top h3, p,
+    &__bottom__h2, 
+    &__copy 
+        color: #FFFFFF
+    &__top 
+        padding: 1rem
+        border-bottom: 1px solid #9b9b9b
+        & h3 
+            font-size: 24px
+            line-height: 28px
+            font-weight: normal
+        & p 
+            font-size: 16px
+            line-height: 26px
+            letter-spacing: 0.05em
+            margin-top: 32px
+            opacity: 0.6
+        &__button 
+            background-color: #5A98D0
+            cursor: pointer
+            color: #FFFFFF
+            border: 0px
+            font-size: 16px
+            line-height: 26px
+            display: flex
+            align-items: center
+            text-align: center
+            letter-spacing: 0.04em
+            padding: 16px 32px
+            transition: background-color .2s
+            &:hover 
+                background-color: #497dac
+    &__bottom 
+        margin: 2rem 0 2rem
+        display: flex
+        justify-content: space-between
+        height: 25vh
+    &__bottom__h2,
+    &__copy
+            font-size: 16px
+            line-height: 26px
+            letter-spacing: 0.05em
+            font-weight: normal
+    &__copy 
+        opacity: 0.4
+        padding-bottom: 2rem
+
+.contacts 
+    min-height: 376px 
+    
+.top__content__contact 
+    background: url(img/top_contacts.svg)
+    padding: 48px 24px
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: 45% 85%
+    height: 250px
+    &__h1, 
+    &__text 
+        color: #ffffff
+        text-align: center
+        width: 75vw
+        margin: 0 auto
+    &__h1 
+        @extend .top__h1
+        margin-bottom: 32px
+        font-size: 44px
+    &__text 
+        @extend .top__text
+        font-size: 20px
+    &__img 
+        margin: 46px 0px 64px
+        display: flex
+        flex-direction: column
+
+@media (max-width: 767px) //мобилка//
+    .nav
+        width: 100vw
+        position: fixed
+        height: 100vh
+        background-color: #234567
+        right: 0
+        top: -1000%
+        transition: all .4s
+
+    .close
+        position: absolute
+        right: 32px
+        top: 32px
+        color: #fff
+        font-size: 24px
+
+    .open
+        color: #356EAD
+        font-size: 24px
+
+    .menu
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        height: 100vh
+        &__link
+            color: #ffffff
+            display: block
+            padding: 32px
+            text-transform: uppercase
+
+    .top 
+        &__h1 
+            text-align: center
+            line-height: 37px
+            margin: 0 auto
+        &__text 
+            margin-bottom: 32px
+            text-align: center
+        &__link 
+            padding: 5px 20px
+            border-radius: 10px
+        
+    .finish_proj
+        margin-bottom: 82px
+        &__h1 
+            font-size: 24px
+            line-height: 28px
+
+    
+    .footer 
+        &__top 
+            display: flex
+            flex-direction: column
+            align-items: center
+            & h3, p 
+                text-align: center
+            &__button
+                margin: 40px 0 40px
+                padding: 12px 32px
+        &__bottom
+            flex-direction: column
+            &__h2 
+                margin-top: 17px
+        &__copy 
+            text-align: center
+        &-contact 
+            margin-top: 2rem
+
+    .contact
+        &__text__p
+            margin-bottom: 32px
+        &__box__product__h1 
+            margin-bottom: 31px
+        &__box__product__button 
+            margin-top: 25px
+        &__box__product__input 
+            margin-bottom: 21px
+            height: 46px
+            &-var 
+                height: 92px
+
+@media (min-width: 575.98px)
+    .center
+        padding: 0 calc(50% - 270px)
+
+@media (min-width: 767.98px) //планшет//
+    html
+        font-size: 32px
+    .center
+        padding: 0 calc(50% - 360px)
+
+    .open,
+    .close
+        display: none
+
+    .menu
+        display: flex
+
+    .top
+        min-height: 767px
+        &__content
+            width: 50%
+            text-align: left
+            margin-top: 109px
+        &__box
+            min-height: 767px
+            background-image: url(img/illustration.svg)
+            background-repeat: no-repeat
+            background-position: 90% 60%
+            background-size: 45%
+
+    .proj
+        &__box
+            display: flex
+            & .proj__item:first-child
+                margin-right: 1rem
+        &__item
+            flex-grow: 1
+
+    .finish_proj
+        margin-top: 127px
+
+    .contact
+        margin: 64px auto
+        width: 50%
+
+    .footer
+        &__top
+            display: flex
+            align-items: center
+            justify-content: space-between
+            padding: 47px 0px 64px 0px
+            & h3 
+                font-size: 36px
+                line-height: 46px
+            &__button
+                margin-left: 51px
+        &__bottom 
+            margin-left: 124px
+            flex-direction: column
+        &__copy
+            margin-left: 124px
+        &-contact 
+            margin-top: 2rem
+
+    .top__content__contact 
+        padding: 50px 24px
+
+
+@media (min-width: 991.98px) //лэптоп//
+    .center
+        padding: 0 calc(50% - 495px)
+
+    .what-we-bo
+        &__box
+            flex-direction: row
+            justify-content: space-between
+
+    .product
+        width: 359px
+
+    .top__content__contact__img
+        margin: 0px 0px 57px
+        & img 
+            display: none
+    
+    .footer
+        &__top 
+            padding: 91px 0px 96px 0px
+            margin-left: 113px
+            margin-right: 113px
+            &__button
+                margin-left: 194px
+        &__bottom 
+            margin-left: 113px
+            margin-right: 93px
+            flex-direction: row
+            height: 10%
+            &__h2
+                margin-right: 20px
+        &__copy
+            margin-left: 113px
+        &-contact 
+            margin-top: 3rem
+    
+    .contact 
+        display: flex
+        justify-content: space-around
+        width: 100%
+        &__text 
+            margin-top: 240px
+            margin-right: 100px
+        &__box__product
+            max-width: 540px
+            width: 540px
+        &-map 
+            width: 80vw
+            margin: 0 auto
+
+@media (min-width: 1199.98px)
+    .center
+        padding: 0 calc(50% - 590px)
